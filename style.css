@@ -1,0 +1,76 @@
+
+body {
+  padding: 0;
+  margin: 0;
+}
+html, body, #mapid {
+  height: 100%;
+  width: 100vw;
+  font-family: 'Lato','Helvetica Neue',Helvetica,'Roboto',Arial,sans-serif;
+}
+
+
+div {
+  display: block;
+}
+
+
+.center-controls {
+  position: absolute;
+  width: 270px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+
+
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  color: black;
+  background-color: white;
+  border: 2px solid rgba(0,0,0,0.2);
+  display: inline-block;
+  border-radius: 4px;
+  font:bold 18px 'Lucida Console', Monaco, monospace;
+  font-size: 15px;
+  padding: 4px;
+  margin-bottom: 18px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: grey;
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+#search {
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  padding: 5px;
+  display: block;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border: 2px solid rgba(0,0,0,0.2);
+  /* display: inline-block; */
+  border-radius: 4px;
+  font-size: 15px;
+}
