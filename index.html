@@ -12,49 +12,36 @@
 
   <body>
      
-    
-  
- 
-
     <div id="mapid"></div>
+    
     <input id="search" type="search" placeholder="Enter a tag" autocomplete="off">
-
 
     <div class="center-controls">
         <form id="form1" runat="server">
             <input type='file' id="btnBrowse" class="inputfile" onclick="" title="Browse picture" />
             <label for="btnBrowse">Browse</label>
           </form>
-        <i id="btnPhotos1" class="fa fa-camera fa-3x" style="display: inline-block;"></i>
-        <i id="btnPhotos0" class="fa fa-refresh fa-spin fa-3x" style="display: none;"></i>
-        </button>
     </div>
         
-    <!-- <button id='pick'>Pick</button>
-    <button id='btnSubmit'>Click</button>
-
-
-
-     -->
-    
+    <!-- mapbox -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <!-- leaflet -->
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
     integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
     crossorigin=""></script>
-
-
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- socket.io -->
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script> 
-
-
+    <!-- clarifai -->
     <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
-
-
+    <!-- PB2 -->
     <script src="scripts/pb2_client.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/geojs.js"></script>
+    <!-- exif.js library -->
     <script src="scripts/exif.js"></script>
-    
+
+    <script src="scripts/script.js"></script>
+
   </body>
 
 </html>
